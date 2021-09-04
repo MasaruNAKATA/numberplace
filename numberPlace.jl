@@ -3,7 +3,11 @@
 ##########
 
 # コマンドライン引数に指定されたファイルから盤を作成
-strInFile = ARGS[1]
+if length(ARGS) == 0
+    strInFile = "./npdata1.txt"
+else
+    strInFile = ARGS[1]
+end
 s = readlines(strInFile)
 # print(s)
 
