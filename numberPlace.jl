@@ -19,6 +19,7 @@ end
 # 関数定義ブロック
 
 function print_board()
+    print('\n')
     for i in 1:9
         print(board[i,1:9])
         print('\n')
@@ -89,7 +90,6 @@ function dfs()
     x, y = find_empty()
 
     if x == 0 & y == 0
-        print('\n')
         print_board()
         return
     else
